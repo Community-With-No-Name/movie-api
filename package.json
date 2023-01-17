@@ -17,6 +17,7 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon build/server.js",
+    "dev": "nodemon server.ts"
   }
 }
