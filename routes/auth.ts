@@ -8,6 +8,7 @@ router.use(cors())
 
 router.post("/sign_up", (req: RequestResponse["req"], res: RequestResponse["res"])=>AuthController.CreateUser(req, res))
 router.post("/sign_in", (req: RequestResponse["req"], res: RequestResponse["res"])=>AuthController.SignIn(req, res))
+router.post("/recover_account", (req: RequestResponse["req"], res: RequestResponse["res"])=>AuthController.RetrieveAccount(req, res))
 
 
 module.exports = router

@@ -10,4 +10,5 @@ const AuthController_1 = __importDefault(require("../controllers/AuthController"
 router.use((0, cors_1.default)());
 router.post("/sign_up", (req, res) => AuthController_1.default.CreateUser(req, res));
 router.post("/sign_in", (req, res) => AuthController_1.default.SignIn(req, res));
+router.post("/recover_account", (req, res) => AuthController_1.default.RetrieveAccount(req, res));
 module.exports = router;
